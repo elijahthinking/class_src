@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디스플레이:플렉스</title>
+  <style>
+    ul{display: flex;}
+    *{margin: 0; margin: 0;}
+    ul{
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      /* 플렉스는 방향을 다 채우는 것 */
+      flex-direction: column;
+      
+      /* 여백값을 균일하게 배분 비트윈은 양끝을 맞추고, 어라운드는 양끝 여백을 주고 모두 1:1 비율로 정렬, 이벤은 양 끝에 모두 같은 정렬로 비교잘사용하지 않음 */
+      width: 50%;
+      /* 50%라고 하면 부모 바디 기준 vw는 브라우저의 기준 */
+      background-color: #ddd;
+      height: 50vh;
+    }
+    ul>li{
+      background-color: blue;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>menu1</li>
+    <li>menu2</li>
+    <li>menu3</li>
+    <li>menu4</li>
+  </ul>
+</body>
+</html>

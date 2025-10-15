@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 태그</title>
+</head>
+<body>
+  <!-- <label>아이디 : </label>
+  <input type="text"> -->
+
+  <!-- <form method="post" action="aaa.jsp"> -->
+
+  <form method="get">
+    <!-- <label>비밀번호 :</label>
+    <input type="text">
+    <input type="submit">
+    <input type="reset">
+    <br> -->
+    
+    <!-- <label>
+      <input type="checkbox">
+      <span>개인정보동의</span>
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" id="check">
+      <span>정보저장</span>
+    </label> -->
+    <label>
+      <span>
+        이름 : </span>
+        <input type="text" name="user-name" value="미리입력">
+    </label>
+    <br>
+    <label for="email">메일주소 : </label>
+    <input type="email" id="email" name="user-email" placeholder="이메일을 입력하세요">
+    <!-- <input type="submit" value="전송"> -->
+     <br>
+     <input type="radio" id="html" name="lang">
+     <label for="html">HTML</label>
+     <input type="radio" id="css" name="lang">
+     <label for="css">css</label>
+     <input type="radio" id="js" name="lang">
+     <label for="js">javascript</label>
+     <br>
+     <input type="checkbox" id="check-html" name="check-html">
+     <label for="check-html">html</label>
+     <input type="checkbox" id="check-css" name="check-css">
+     <label for="check-css">css</label>
+     <input type="checkbox" id="check-js" name="check-js">
+     <label for="check-js">js</label>
+    </label>
+     <hr>
+     <button type="submit">로그인</button>
+     <button type="reset">초기화</button>
+  </form>
+</body>
+</html>

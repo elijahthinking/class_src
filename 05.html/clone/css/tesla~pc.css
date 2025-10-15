@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/* class */
+.blue{
+  background-color: #326ae1;
+  color: #ddd;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  width: 200px;
+  text-align: center;
+}
+.white{
+  background-color: #fff;
+  color: #222;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+    width: 200px;
+  text-align: center;
+}
+
+/* hedaer 영역시작 */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: width 1024px;
+  margin:0 auto ;
+  padding: 1rem 0;
+}
+header > p{
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+header > nav{
+  display: flex;
+  align-items: center;
+
+}
+header > nav > a{
+  padding: 0.5rem 1rem; /*1rem=16px 05.rem=8 */
+  border-radius: 0.5rem;
+}
+header > nav > a:hover{
+  background-color: #ddd;
+}
+header > ul{
+  display: flex;
+  gap: 1rem;
+}
+/* hedaer 영역 끝 */
+/* 메인영역시작 */
+main {
+  height: 70vh;
+  background-image: url(../img/main-1-3.png);
+  background-size: cover;
+  background-position:center 60%;
+  text-align: center ;
+  color: #fff;
+
+  
+}
+main > h1{
+  font-size: 4rem;
+}
+main > h1, main > h2{
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+main > a {
+  text-decoration: underline;
+}
+main > .btn-wrap {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+main > .btn-wrap > p:hover{
+  cursor: pointer;
+  filter: brightness(0.7);
+}
+/* 메인영역 끝 */
+
+/* section#model1 영영시작 */
+#model {
+  overflow-x: hidden;
+  padding: 2rem;
+}
+#model > .model-item{
+  width: 150vw;
+  display: flex;
+  gap: 2rem;
+}
+#model article{
+  color: #fff;
+  width: 800px;
+  height: 400px;
+  background-image: url(../img/main2-1.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+  /* border: 2px solid #f00; */
+  box-shadow: 0 0 0 3px #fff, 0 0 0 4px#000;
+  /* 순서 x y 블러처리 두께0 */
+  /* border: 1px solid #000; */ 
+  /* 중복 되기에 사이즈를 크게 하거나 두번 넣기 X 테두리는 쉐도우로 */
+  /* 박스쉐도우에 콤마를 넣고 두값을 넣어도 같은 테두리 2개 가능~ */
+}
+#model> .model-item > article  > .bottom-text > h2{
+  font-size: 3rem;
+  
+}
+#model > .model-item > article > .bottom-text > .btn-wrap{
+  display: flex;
+  gap: 1rem
+}
+
+#model > .indicator{
+display: flex;
+gap: 1rem;
+justify-content: center;
+padding: 1rem;
+}
+#model > .indicator > li {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#model > .indicator > li:first-child{
+  background-color: #222;
+}
+/* section#model1 영역끝 */
+
+/* section@act 영역시작 */
+#act{
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+#act > article{
+  width: 50%;
+  height: 200px;
+  display: flex;
+  background-color: #ddd;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#act > article > div{
+  flex: 2;
+  /* 플렉스로 맞춰도 되지만 위드 값으로 맞춰도 가능 ex 70% 30% */
+  /* 아래 아티클이 30퍼센트 이기에 위 플렉스를 주석하고 width: 70%; 로줘도 가능 */
+  border-right: 2px solid #000;
+  padding: 2rem;
+}
+#act > article > img{
+  flex: 1;
+  width: 30%;
+  aspect-ratio: 3/1 ;
+  object-fit: cover;
+}
+/* section@act 영역끝 */
+
+/* section#네트워크 영역 시작 */
+#network{
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+/* #network > .left{
+  display: flex;
+} */
+ #network > .left > .btn-wrap{
+  display: flex;
+  gap: 1rem;
+ }
+#network > .left > .btn-wrap>p:nth-child(1){
+width: 200px;
+color: #fff;
+  background-color: #00fa3e;
+border-radius: 0.5rem;
+text-align: center;
+padding: 0.5rem 0;
+}
+
+#network > .left > .btn-wrap>p:nth-child(2){
+  width: 200px;
+  color: #fff;
+  background-color:tomato ;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+#network > .right{
+  display: flex;
+  width: 200px;
+  color: #555;
+}
+#network > .right > div > p{
+  font-size: 20px;
+}
+
+#network > .right >div > .number{
+  display: flex;
+  font-size: 2rem;
+}
+#network > .right > div > .number > div{
+  border: 1px solid #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+
+  
+
+/* section#네트워크 영역 끝 */

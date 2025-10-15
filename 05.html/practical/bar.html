@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애니메이션 스킬 프로그래스 바</title>
+  <style>
+    *{
+      margin: 0; padding: 0;
+    }
+    /* 폰트스타일 지정하기 */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    .raleway-base {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+}
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #wrap{
+      background-color: #222;
+      color: white;
+      width: 800px;
+      padding: 2rem;
+      border-radius: 2rem;
+    }
+    h1{
+      text-align: center;
+      font-size: 2.5rem;}
+    
+    .container {
+      margin: 1rem 0;
+    }
+    .container > .txt{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.7rem;
+    }
+    .container > .line{
+      border: 1px solid skyblue;
+      padding: 2rem;
+      border-radius: 3px;
+    }
+    .container > .line > .fill{
+      animation-fill-mode: both;
+      height: 10px;
+      /* width: 90%; */
+      /* background-color: brown; */
+      background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+      animation-name: progress;
+      animation-duration: 1s;
+      animation-iteration-count: 2;
+      animation-delay: 20s;
+      /* 애니메이션시작전과 종류 후 상태제어 */
+      /* forwards 마지막을 유지 backwrads 시작을 유지 
+      both 둘다 딜레이 시간은 처음상태를 유지, 애니메이션종료가되면 마지막 유지 */
+    }
+    #wrap > .container:nth-of-type(1) .fill{
+      animation-delay: 0.2s;
+      
+    }
+    #wrap > .container:nth-of-type(2) .fill{
+      animation-delay: 0.4s;
+    }
+    #wrap > .container:nth-of-type(3) .fill{
+      animation-delay: 0.6s;
+    }
+    #wrap > .container:nth-of-type(4) .fill{
+      animation-delay: 0.8s;
+    }
+    #wrap > .container:nth-of-type(5) .fill{
+      animation-delay: 1s;
+    }
+    @keyframes progress {
+      0% {width: 0;}
+    }
+  </style>
+</head>
+<body class="raleway-base">
+  <div id="wrap">
+  <h1>sofware skills</h1>
+  <div class="container">
+    <div class="txt">
+      <p>html5</p>
+      <p>90%</p>
+      </div>
+      <div class="line">
+        <div class="fill" style="width: 90%;"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="txt">
+      <p>css3</p>
+      <p>80%</p>
+      </div>
+      <div class="line">
+        <div class="fill" style="width: 80%;"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="txt">
+      <p>jqurey</p>
+      <p>65%</p>
+      </div>
+      <div class="line">
+        <div class="fill" style="width: 65%;"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="txt">
+      <p>photoshop</p>
+      <p>50%</p>
+      </div>
+      <div class="line">
+        <div class="fill" style="width: 50%;"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="txt">
+      <p>ilustrator</p>
+      <p>80%</p>
+      </div>
+      <div class="line">
+        <div class="fill" style="width: 80%;"></div>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+ 
+
+</body>
+</html>

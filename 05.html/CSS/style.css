@@ -1,0 +1,22 @@
+body{
+  background-color: aqua;
+}
+p{
+  /* color:tomato; */
+  color: gold;
+  color: #f60
+  color rgb(rgb(141, 54, 54), green, blue)
+  coloa rgba(red, green, blue, alpha)
+  
+}
+h1{
+  background-color: tomato;
+  width: 70%;
+  height: 500px;
+  h1 p{ color: #f60;}
+}
+/* span{
+  background-color: yellow;
+  width: 500px;
+  height: 500px;
+} */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폰트사이즈</title>
+  <!-- 가변 : em, rem, vw, vh -->
+   <!-- 기본 폰트 사이즈 : 16px 기본 -->
+    <style>
+      html{font-size: clamp(10px,5vw,16px);}
+      #main{ font-size: 20px;
+      width: 100vw;
+      height: 50vh;
+      background-color: tomato;
+      }
+      .sub{font-size: 10em;}
+      .sub > p{ font-size: 3rem;}
+      /* 1em은 부모의 폰트 사이즈 3em 은 즉 3배 */
+      /* rem은 최상위 요소만 따라간다 */
+      #main > p{
+        font-style: italic;
+      }
+      #main > p{
+        font-style: oblique;
+        font: bold;
+        text-shadow: 10px 10px 5px #000;
+      }
+      .small{ font-variant:small-caps ;}
+      .transform{
+        text-transform: lowercase;}
+      /* 전각문자 : 모든 글자가 동일 한 가로 폭을 가지는 것 우리나라언어는 거의 전각 외국어
+      같은 경우 ex 중국어 경우 따로 처리 */
+    </style>
+</head>
+<body>
+  <div id="main">
+  <p>main 아래 폰트  사이즈</p>
+  <div class="sub">
+    <P>sub 아래 폰트 사이즈</P>
+
+  </div>
+  </div>
+  <p class="small">시드니(SYDNEY)</p>
+  <p>시드니(SYDNEY)</p>
+  <p class="transform">ABC abc 123 !?<html></html></p>
+</body>
+</html>

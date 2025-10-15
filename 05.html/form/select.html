@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여러 데이터 나열</title>
+  <style>
+    #area{
+      resize: horizontal;
+    }
+  </style>
+</head>
+<body>
+  <form method="get">
+  <label for="city">도시선택</label>
+  <select name="city" id="city" >
+    <option value="seoul">서울</option>
+    <option value="daejeon">대전</option>
+    <option value="daegu" selected>대구</option>
+    <option value="basan">부산</option>
+  </select>
+  <hr>
+  <select name="fruit" multiple>
+    <optgroup label="국산">
+      <option value="apple">사과</option>
+      <option value="pear">배</option>
+      </optgroup>
+      <optgroup label="수입">
+      <option value="banana">바나나</option>
+      <option value="orange">오렌지</option>
+      </optgroup>
+  </select>
+  <hr>
+  <label for="browser">브라우저 선택 : </label>
+  <input list="browser-list" id="browser">
+  <datalist id="browser-list">
+    <!-- <option value="Chrome">크롬</option>
+    <option value="Edge">엣지</option>
+    <option value="Firefox">파이어폭스</option>
+    <option value="Safari">사파리</option>
+     -->
+    
+    <option value="Chrome" label="크롬">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Safari">
+  </datalist>
+  <hr>
+  <label for="area">댓글</label>
+  <textarea 
+  name="area" 
+  id="area" 
+  rows="5" 
+  cols="40"
+  placeholder="댓글을 입력하세요 10자이내"
+  maxlength="10"
+  required
+  ></textarea>
+  <button type="submit">전송</button>
+</form>
+</body>
+</html>

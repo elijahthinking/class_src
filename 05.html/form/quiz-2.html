@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>퀴즈2</title>
+  <style>
+    /* fieldset{
+      width: 500px;
+      height: 150px;
+    } */
+     ul{
+      list-style: none;
+     }
+    input[type="radio"]{
+      display: block;
+      align-items: center;
+    }
+    textarea{
+      width: 60%;
+    }
+  </style>
+</head>
+<body>
+  <h1>프런트엔드 개발자 지원서</h1>
+  <p>
+    HTML, CSS, javascript에 대한 기술력 이해와 경험이 있는 분을 찾습니다.
+  </p>
+  <hr>
+  
+  <form method="get">
+        <h2>개인정보
+          <li>
+            <label for="user">이름</label>
+            <input type="text" id="user" name="user">
+          </li>
+          <li>
+            <label>
+              <span>
+                연락처
+              </span>
+              <input type="tel" name="phone">
+            </label>
+          </li>
+      <!-- <div class="user-id">
+      <label for="user-id">이름 : </label>
+      <input type="text" id="user-id" placeholder="공백없이 입력하세요">
+      </div>
+      <div class="contact">
+        <label for="contact">연락처</label>
+        <input type="text" id="contact">
+      </div> -->
+
+      <!-- <h2>지원분야
+        <br>
+     <input type="radio" id="pub" name="lang">
+     <label for="pub">웹퍼블리싱</label>
+     <input type="radio" id="app" name="lang">
+     <label for="app">웹어플리케이션 개발</label>
+     <input type="radio" id="dev" name="lang">
+     <label for="dev">개발환경개선</label> -->
+     
+     <h2>지원분야</h2>
+     <ul>
+      <li>
+
+      </li>
+      <li><input type="radio" name="field" id="one" checked>
+      <label for="one">웹퍼블리싱</label>
+      </li>
+      <li><input type="radio" name="field" id="two" value="two">
+      <label for="two">웹어플리케이션 개발</label>
+      <li><input type="radio" name="field" id="three" value="three">
+      <label for="three">개발환경개선</label>
+     </ul>
+     <!-- <h3>지원동기</h3>
+     <textarea 
+  name="area" 
+  id="area" 
+  rows="5" 
+  cols="40"
+  placeholder="본사 지원 동기를 간략히 써주세요"
+  maxlength="10"
+  required
+  ></textarea>
+  <br>
+  <button type="submit">접수하기</button>
+  <button type="submit">다시쓰기</button> -->
+     
+  <textarea name="agree"
+  maxlength="60"
+  rows="5"
+  ></textarea>
+  <br>
+     <button type="submit">접수하기</button>
+  <button type="submit">다시쓰기</button>
+
+</body>
+</html>

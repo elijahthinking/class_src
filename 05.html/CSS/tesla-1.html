@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테슬라메인페이지</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    header{
+      background-color: aqua;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    nav >p{
+      background-color:rgba(10, 10, 10, 0.5);
+      padding: 8px 16px;
+      border-radius: 0.5rem;
+    }
+    #banner{
+      height: 300;
+      text-align: center;
+    }
+    #banner > a {
+      color: black;
+    }
+    .btn-wrap > p {
+      width: 150px;
+      display: inline-block;
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+    .btn-wrap > p:nth-child(1) {
+      background-color: blue;
+      color: #fff;
+    }
+    .btn-wrap > p:nth-child(1):hover{
+      background-color: rgb(120, 120, 201);
+    }
+    .btn-wrap > p:nth-child(2):hover{
+      background-color: rgb(204, 204, 209);
+    }
+    
+    .btn-wrap{
+      margin: 1rem;
+    }
+    .btn-wrap > p:nth-child(2) {
+      background-color: #fff;
+    }
+    #container{
+      width: 100px;
+      height: 100px;
+    }
+  
+    #container > div {
+        background-color: tomato;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>TESLA</h1>
+      <P>메뉴</P>
+    </nav>
+    <div id="banner">
+      <h2>model 3 ZERO 프로모션</h2>
+      <h3>보조금과 함꼐 더욱 합리적으로</h3>
+      <a href="#">자세히 알아보기</a>
+      <div class="btn-wrap">
+        <p>인벤토리 보기</p>
+        <p>시승 신청</p>
+      </div>
+    </div>
+  </header>
+  <main>
+  <div id="container">
+      <div><img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Card-Model-Y-Desktop.png" class="tcl-react-media__asset" alt="나무에 둘러싸인 고속도로를 주행하는 Stealth Grey Model&nbsp;Y"></div>
+      <div>box2</div>
+      <div>box3</div>
+      <div>box4</div>
+      </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+section{
+  padding: 24px;
+}
+section >.top {
+  border-radius: 10px;
+  height: 500px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section >.top > .bottom > h2{
+  font-size: 68px;
+  margin-bottom: 20px;
+} 
+section >.top>.bottom>.btn-wrap{
+ display: flex;
+ gap: 10px;
+}
+section > .top> .bottom> .btn-wrap > P {
+  padding: 8px 32px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  filter: 0.8;
+  transition: 0.3;
+}
+
+/* section > .top> .bottom> .btn-wrap > P :hover{
+  cursor: pointer;
+  filter: 0.8;
+  transition: 0.3;
+} */
+ /* 우선은 개별지정, 애니메이션은 원본 처리 */
+
+section > .top > .bottom >.btn-wrap >p:nth-child(1) {
+  background-color: rgb(57, 57, 255);
+}
+section > .top > .bottom >.btn-wrap >p:nth-child(1) :hover{
+  background-color: #8f8fff ;
+  cursor: pointer;
+}
+section > .top > .bottom > .btn-wrap > p:nth-child(2) {
+  background-color:  #fff;
+  color: #000;
+}
+section > .indicator > uL{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px 0;
+}
+section > .indicator > ul > li{
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+section > .indicator > ul > li:nth-child(1){
+  background-color: #333;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>백그라운드</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .panel {
+      height: 30vh;
+      text-align: center;
+      padding-top: 40px;
+      background-image: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(185, 182, 220, 1) 59%, rgba(148, 187, 233, 1) 100%);
+    }
+    .parallax-1, .parallax-2 {
+      height: 60vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .parallax-1 {
+      background-image: url(../assets/images/img01.jpg);
+    }
+    .parallax-2 {
+      background-image: url(../assets/images/img02.jpg);
+    }
+  </style>
+</head>
+<body>
+  <section class="wrap">
+    <h1 class="panel">Welcome</h1>
+    <div class="parallax-1"></div>
+    <div class="panel">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis possimus dolorum qui nemo, aliquid hic nam vero, temporibus, sapiente expedita minima repudiandae mollitia! Facilis consequatur maiores soluta quia dignissimos eos!</div>
+    <div class="parallax-2"></div>
+    <p class="panel">스크롤 끝!</p>
+  </section>
+</body>
+</html>
