@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D 책 상세 페이지</title>
+  <link rel="stylesheet" href="../CSS/BOOKSTORE.PRACTIC.css">
+  <link rel="stylesheet" href="../CSS/reset.css">
+</head>
+<body>
+  
+    <!-- 왼쪽: 3D 책 -->
+         <main>
+        <div class="book-img">
+            <div class="page">
+                <div class="front"><img src="../practical/images/book/front.jfif" alt="책 앞표지"></div>
+          <div class="back"><img src="../practical/images/book/back.jfif" alt="책 뒷표지"></div>
+          <div class="side"><img src="../practical/images/book/side.jfif" alt="책옆면"></div>
+        </div>
+        
+        </main>
+
+
+    <!-- 오른쪽: 책 설명 -->
+    <div class="book-info">
+      <h1>AI를 압도하는 내면 경쟁력</h1>
+      <h3>이현주 지음</h3>
+      <h4>이 책을 선정한 이유</h4>
+      <p>
+        교수님과의 강연에서의 인연을 통해 저희 부부에게 진솔한 상담을 해주신 경험이 있습니다<br>
+        저희들의 가능성을 발견하고, 삶의 의미를 새롭게 설계하는 방법을 제시해 주셨고<br>
+        앞으로의 미래를 위한 저의 만의 강점을 통해 용기를 얻을 수 있는 책이었습니다.
+      </p>
+      <p><strong>가격:</strong> 18,000원</p>
+      <a href="#" class="buy-btn">구매하기</a>
+    </div>
+  
+
+  <script>
+    // 클릭 시 책 회전
+    const book = document.getElementById('book-img');
+    book.addEventListener('click', () => {
+      book.classList.toggle('flipped');
+    });
+  </script>
+</body>
