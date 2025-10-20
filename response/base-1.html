@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형</title>
+  <style>
+    *{margin: 0; padding: 0; }
+    ul{list-style: none;}
+    ul{
+      display: flex;
+      justify-content: center0;
+      gap: 1rem;
+      background-color: #ddd;
+
+    }
+    ul > li {
+      background-color: tomato;
+      padding: auto 0.5rem 1rem;
+    }
+    @media all and (min-width: 321px){
+      body{
+        background-color: yellow;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>타이틀</h1>
+  <ul>
+    <li>menu-1</li>
+    <li>menu-2</li>
+    <li>menu-3</li>
+    <li>menu-4</li>
+  </ul>
+  <div>
+    <p>box1</p>
+    <p>box2</p>
+    <p>box3</p>
+    <p>box4</p>
+    <p>box5</p>
+    <p>box6</p>
+    <p>box7</p>
+    <p>box8</p>
+  </div>
+  <picture>
+    <source srcset="../" media="min-width:1024px">
+  </picture>
+</html>
+

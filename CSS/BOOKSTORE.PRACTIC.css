@@ -23,16 +23,16 @@ main {
     width: 300px;
     height: 500px;
     position: relative;
-    /* transform: rotatex(130deg); */
     transform-style: preserve-3d;
     transition: 0.5s;
+    /* transform: rotateY(100deg); */
 }
 .book-img.flipped{
     transform: rotateY(180deg);
     cursor: url(../practical/images/book/arow-2.png), auto;
 }
 .book-img:not(.flipped):hover{
-    transform: rotateY(30deg);
+    transform: rotateY(100deg);
     cursor: url(../practical/images/book/arow-2.png), auto;
 }
 .page{
@@ -55,11 +55,11 @@ main {
     transform: translateZ(-35px) rotateY(180deg);
 }
 .side{
-    width: 70px;
-    height: 100%;
+    width: 500px;
+    height: 90%;
     position: absolute;
     top: 0;
-    left: -35px;
+    left: -2000px;
     transform: rotateY(-90deg);
 }
 
@@ -76,11 +76,12 @@ main {
 }
 
 .front img,
-.back img {
+.back img, .side img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
+
 
 /* 앞면 */
 .front {
@@ -94,7 +95,7 @@ main {
 
 /* 책 옆면 */
 .side {
-  background: url('side.jfif') center/cover no-repeat;
+  /* background: url('side.jfif') center/co ver no-repeat; */
   width: 40px;
   height: 100%;
   position: absolute;

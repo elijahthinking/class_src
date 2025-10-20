@@ -14,13 +14,17 @@
          <main>
         <div class="book-img">
             <div class="page">
-                <div class="front"><img src="../practical/images/book/front.jfif" alt="책 앞표지"></div>
-          <div class="back"><img src="../practical/images/book/back.jfif" alt="책 뒷표지"></div>
-          <div class="side"><img src="../practical/images/book/side.jfif" alt="책옆면"></div>
+              <div class="front">
+                <img src="../practical/images/book/front.jfif" alt="책 앞표지">
+              </div>
+              <div class="back">
+                <img src="../practical/images/book/back.jfif" alt="책 뒷표지">
+              </div>
+            </div>
+            <div class="side"><img src="../practical/images/book/side.jfif" alt="책옆면"></div>
         </div>
         
         </main>
-
 
     <!-- 오른쪽: 책 설명 -->
     <div class="book-info">
@@ -28,18 +32,18 @@
       <h3>이현주 지음</h3>
       <h4>이 책을 선정한 이유</h4>
       <p>
-        교수님과의 강연에서의 인연을 통해 저희 부부에게 진솔한 상담을 해주신 경험이 있습니다<br>
+        교수님과의 강연에서의 인연을 통해 이헌주 교수님 께서 저희 부부에게 진로에 대한 상담을 해주신 경험이 있습니다<br>
         저희들의 가능성을 발견하고, 삶의 의미를 새롭게 설계하는 방법을 제시해 주셨고<br>
-        앞으로의 미래를 위한 저의 만의 강점을 통해 용기를 얻을 수 있는 책이었습니다.
+        앞으로의 미래를 위한 저희 부부의 만의 강점을 통해 용기를 얻을 수 있었습니다.<br>
+        이를 통해 오프라인 활동에 익숙해 있던 저는 온라인 과정과 저만의 강점을 융합하기 위해 웹과정에 대한 강의 수강과 AI 등을 학습하며 성장해 가고 있습니다.
       </p>
-      <p><strong>가격:</strong> 18,000원</p>
+      <p><strong>가격:</strong> 16,200원</p>
       <a href="#" class="buy-btn">구매하기</a>
     </div>
   
-
   <script>
     // 클릭 시 책 회전
-    const book = document.getElementById('book-img');
+    const book = document.querySelector('.book-img');
     book.addEventListener('click', () => {
       book.classList.toggle('flipped');
     });
