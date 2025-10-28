@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/* class */
+.blue{
+    background-color: #3E6AE1;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    width: 200px;
+    text-align: center;
+}
+.white{
+    background-color: #eee;
+    color: #222;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    width: 200px;
+    text-align: center;
+}
+.black{
+    background-color: #333;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    width: 200px;
+    text-align: center;
+}
+.indicator{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.indicator > li{
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.indicator > li:first-child{
+    background-color: #222;
+}
+/* heaer 영역 시작*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+header > p{
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 8px;
+}
+header > nav{
+    display: flex;
+    align-items: center;
+}
+header > nav > a{
+    padding: 0.5rem 1rem;  /* 1rem=16px 0.5rem=8 */
+    border-radius: 0.5rem;
+}
+header > nav > a:hover{
+    background-color: #ddd;
+}
+header > ul{
+    display: flex;
+    gap: 1rem;
+}
+/* header 영역 끝 */
+
+/* main 영역 시작 */
+main{
+    height: 70vh;
+    background-image: url(../images/main-pc.png);
+    background-size: cover;
+    background-position: center 60%;
+    text-align: center;
+    color: #fff;
+}
+main > h1{
+    font-size: 4rem;
+}
+main > h1, main > h2{
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+main > a{
+    text-decoration: underline;
+}
+main > .btn-wrap {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main > .btn-wrap > p:hover{
+    cursor: pointer;
+    filter: brightness(0.7);
+}
+/* main 영역 끝 */
+
+/* section#model 영역 시작 */
+#model{
+    overflow-x: hidden;
+    padding: 2rem;
+}
+#model > .model-item{
+    width: 150vw;
+    display: flex;
+    gap: 2rem;
+}
+#model article{
+    color: #fff;
+    width: 800px;
+    height: 400px;    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 1rem;
+    /* border: 2px solid #fff; */
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000;
+}
+#model article:nth-child(1){
+    background-image: url(../images/imgi_2.png);
+}
+#model article:nth-child(2){
+    background-image: url(../images/imgi_3.png);
+}
+#model article > .bottom-text > h2{
+    font-size: 3rem;
+}
+#model article > .bottom-text > .btn-wrap{
+    display: flex;
+    gap: 1rem;
+}
+
+/* section#model 영역 끝 */
+
+/* section#act 영역 시작 */
+#act{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+#act > article{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    background-color: #eee;
+    border-radius: 1rem;  
+    overflow: hidden;  
+}
+#act > article > div{
+    /* flex: 2; */
+    width: 70%;
+    border-right: 2px solid #000;
+    padding: 2rem;
+}
+#act > article > img{
+    /* flex: 1; */
+    width: 30%;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+}
+/* section#act 영역 끝 */
+
+/* section#network 영역 시작*/
+#network{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+#network > .left{
+    padding: 1rem;
+}
+#network > .left > .btn-wrap{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+#network > .right{
+    display: flex;
+    gap: 1rem;
+    color: #555;
+}
+#network > .right > .one > .number > div{
+    color: #f00;
+}
+#network > .right > div > p{
+    font-size: 12px;
+}
+#network > .right > div > .number{
+    display: flex;
+    font-size: 2rem;
+}
+#network > .right > div > .number > div{
+    border: 1px solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+/* section#network 영역 끝*/
+
+/* section#last 영역 시작*/
+#last{
+    padding: 2rem;
+    
+}
+#last > .last-content{
+    display: flex;
+    gap: 1rem;
+}
+#last > .last-content > article{    
+    background-size: cover;
+    width: 50%;        
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+#last > .last-content > article:nth-child(1){
+    background-image: url(../images/last-01.jpg);
+}
+#last > .last-content > article:nth-child(2){
+    background-image: url(../images/last-02.jpg);
+}
+#last > .last-content > article > .bottom > h2{
+    font-size: 2rem;
+}
+#last > .last-content > article > .bottom > p{
+    margin-bottom: 1rem;
+}
+/* section#last 영역 끝*/
