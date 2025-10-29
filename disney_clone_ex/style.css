@@ -6,6 +6,12 @@ ul{
   list-style: none;
 }
 /* 헤더영역시작 */
+
+
+/* 포지션relative 상대위치- 부모영역에 주고 노멀플로우를 유지 표면적으로 이동한 것 처럼 보인다 보통 좌측상단에 위치 부모요소에 배치 될떄 부묘요소 위치 기준 
+자기자신위치(staic) 기준   */
+
+/* background-size: cover; 로 해당영역에 맞게 이미지 채우기 */
 header{
   height: 300px;
   background-image: url(./images/배경1.webp); 
@@ -14,6 +20,13 @@ header{
   position: relative;
 
 }
+
+/* 네비영역
+ justify-content:는 메인축(좌우)로 정렬하는 속성 
+ flex-start 시작점으로 정렬, end 끝점정렬, 
+ center 가운데정렬 
+ space-between 아이템들의 “사이(between)”에 균일한 간격
+ space-around around 둘레에 균일한간격*/
 nav{
   display: flex;
   justify-content: space-between;
@@ -27,8 +40,8 @@ nav{
 
 /* 로그인버튼 */
 .login-btn{
-  background-color: #02D6E8;
-  color:#000000;
+  background-color: #000000;
+  color:#ddd;
   border:1px solid rgba(255,255,255,0.8);
   padding:6px 12px;
   margin: 1rem;
@@ -40,11 +53,13 @@ nav{
 }
 /* 로그인 호버 */
 .login-btn:hover{
-  background-color: #09ACC8;
+  background-color: #eee;
+  color: #000000;
 }
 /* 디즈니로고 */
 
-
+/* absolute 절대 위치- 포지션을 지정하면노멀플로우에서 벗어난다 즉 본인의 위치에서 벗어나 부모요소의 기준으로 이동 즉 기존 공간을 차지 하지 않는다! 
+특정영역위에 존재할 때 사용 부모 릴레이티브 본인 앱솔루트  */
 .logo-main{
   position: absolute;
   left:50%;
@@ -54,7 +69,8 @@ nav{
 }
 
 /* 헤더영역끝 */
-/* #membership 영역 시작  */
+
+/* section#membership 시작  */
 
 /* 멤버쉽 섹션의 배경색과 글자색을 지정 */
 #membership{
@@ -97,7 +113,7 @@ flex로 1대 1 비율을 맞춰줌 ex 만약 요소가 2개가 아닌 3개 4개�
 #membership > .btn-wrap> div > p:nth-child(1) {
   background-color: #02D6E8;
   padding: 1rem;
-  
+  border-radius:8px;
 }
 
 /* 호버가 되었을 때의 색상 */
@@ -127,9 +143,79 @@ color: #888;
 패딩: 콘텐츠와 보더사이의 영역/ 마진 보더의 바깥쪽 주변요소와의 거리
    */
 #membership > p{
-/* padding: 20px; */
+padding: 20px;
 /* margin: 20px; */
+/* 마진은 보더 바깥쪽영영이기에 섹션간의 거리가 발생하여 주석처리 */
 text-align: center;
 color: #888;
 }
-/* #membership 영역 끝  */
+/* section#membership 영역 끝  */
+
+/* section#movie 시작 */
+#movie {
+  background-color: #030610;
+  color: #fff; 
+  height: 330px;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+#movie > h2{
+  text-align: center;
+  padding: 2rem;
+}
+
+#movie > .rangking {
+  display: flex;
+  gap: 1rem;
+  /* padding: 1rem; */
+}
+
+#movie > .rangking > div{
+flex-wrap: nowrap;
+justify-content: space-around;
+}
+
+#movie > .rangking > .movie-btn {
+  font-size: 50px;
+  background:rgba(0,0,0,0.35);
+  /* border:1px solid rgba(255,255,255,0.8);  */
+  /* 보더는 위치 확인용으로 입력 */
+  position:absolute;
+  left:90%;
+  margin-top:60px;
+}
+/* section#movie 영역 끝 */
+
+/* section#various 영역 시작 */
+#various {
+  display: block;
+  background-color: #030610;
+  color: #fff;
+  text-align: center;
+}
+
+#various > .vscontainer{
+  /* background-color: brown; */
+  /* 적용확인용컬러 */
+  padding: 30px;
+}
+#various > .vscontainer > div > h3{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #02D6E8;
+  /* 적용확인용 컬러 */
+}
+#various > .vscontainer > div > p{
+  color: #888;
+}
+
+#various > .vscontainer > div > div{
+  width: 40%;
+  margin: 1rem auto;
+  border-bottom:1px solid rgba(255,255,255,0.8);
+}
+
+/* section#various 영역 끝 */
+
+
