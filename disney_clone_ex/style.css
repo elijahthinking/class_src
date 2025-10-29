@@ -43,6 +43,8 @@ nav{
   background-color: #09ACC8;
 }
 /* 디즈니로고 */
+
+
 .logo-main{
   position: absolute;
   left:50%;
@@ -51,8 +53,10 @@ nav{
   
 }
 
+/* 헤더영역끝 */
 /* #membership 영역 시작  */
 
+/* 멤버쉽 섹션의 배경색과 글자색을 지정 */
 #membership{
   background-color: #000000;
   color: #fff;
@@ -62,33 +66,69 @@ nav{
   padding: 2rem;
   text-align: center
 }
+
+/* 버튼 속성 */
+
+/* 버튼 컨테이너 영역에 대한 설정 */
+/* Flex 아이템들은 가로 방향으로 배치되고, 자신이 가진 내용물의 width 만큼만 차지 마치 inline 요소들 처럼 height는 컨테이너의 높이만큼 늘어남 */
+
+/* Margin
+인접 요소와 상관 없이 항상 border 바깥에 여백을 둔다.
+해당 엘리먼트에 적용된다. */
+
+/* Gap
+인접 요소가 없다면 적용되지 않는다.
+말 그대로 요소와 요소 사이의 공백
+내부 엘리먼트들에 적용 */
 #membership > .btn-wrap{
   display: flex;
   gap: 1rem;
   padding: 1rem;
+  
 }
+
+/* 버튼 클래스 안에 나누어진 div 영역 전체에 대한 선택
+flex로 1대 1 비율을 맞춰줌 ex 만약 요소가 2개가 아닌 3개 4개로 늘더라도 그 비율에 맞추어 해당 블록이 정렬 됨  요소가 3개라면 플렉스 뒤 숫자를 flex: 1 1 100px; 같이 넣어 비율조정 가능*/
 #membership > .btn-wrap > div{
-  flex: 1;
+  flex: 1 ;
 }
-#membership > .btn-wrap > div > p:nth-child(1){
-  background-color: #09ACC8;
+
+/* 버튼 1 2는  감싸진 div 영역중 버튼과 텍스트로 나누어지는데 그중 p로 구성된 버튼만 선택 해야 하기에 첫번째 자녀로 선택*/
+#membership > .btn-wrap> div > p:nth-child(1) {
+  background-color: #02D6E8;
   padding: 1rem;
+  
 }
+
+/* 호버가 되었을 때의 색상 */
 #membership > .btn-wrap > div > p:nth-child(1):hover{
   background-color: #09ACC8;
 }
-#membership > .btn-wrap > .text > p:nth-child(2){
+
+/* 버튼 1 2 중 1의 하단의 설명글 생성을 위해
+div 클래스 text로 묶고 두번째 자식인 설명글 선택*/
+#membership > .btn-wrap > .text1 > p:nth-child(2){
   text-align: center;
 color: #888;
 }
 
+
+/* a 태그는 인라인이기 때문에 블록으로 처리하여 영역을 차지하도록 처리 후
+텍스트를 중앙 정렬 , a태그의 색상을 변경 */
 #membership > a{
   display: block;
   text-align: center;
   color: #fff;
 }
+
+
+/* 최하단 영역의 글 2개의 p는 섹션의 직접적인 자식
+콘텐츠는 실제내용을 포함하는 영역,보더는 콘텐츠를 감싸는 테두리선
+패딩: 콘텐츠와 보더사이의 영역/ 마진 보더의 바깥쪽 주변요소와의 거리
+   */
 #membership > p{
-padding: 20px;
+/* padding: 20px; */
+/* margin: 20px; */
 text-align: center;
 color: #888;
 }
