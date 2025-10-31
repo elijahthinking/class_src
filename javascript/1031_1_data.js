@@ -6,7 +6,6 @@ console.log(typeof today);
 console.log(today)
 
 
-
 // console.log()
 
 
