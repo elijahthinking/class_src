@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스크롤 이벤트 처리</title>
+  <style>
+    *{
+      margin: 0; padding: 0;
+    }
+    main{
+      height: 500vh;
+      background-color: #ddd;
+    }
+    h1{
+      background-color: tomato;
+    }
+    h1.fixed{
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .progressBar{
+      width: 100%;
+      height: 10px;
+      position: fixed;
+      top: 50vh;
+      left: 0;
+      background-color: dodgerblue;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="progressBar"></div>
+  <h1>스크롤 이벤트</h1>
+  </main>
+  <script>
+    //h1요소를 가져오기
+    const h1Elem = document.querySelector('h1');
+    window.addEventListener('scroll',()=>{
+      // scrollHeight : 전체문서의 높이()
+      // clientHeight : 100vh
+      // scrollTop 현재 스크롤위치
+      const {scrollHeight} = document.documentElement;
+      const scrollable = scrollHeight - clientHeight;
+      const scrollable rate=(screenTop/scrollable)*100;
+      progressElem.style.width = `${rate}%`;
+      console.log( rate)
+
+      //현재 스크롤위치 가져오기
+      // let scollY = window.scrollY;
+      // console.log( scollY );
+      // if ( scollY > 500){
+      //   // h1Elem.style.position = 'fixed';
+      //   h1Elem.classList.add('fixed');
+      // }else {
+      //   // h1Elem.style.position = 'staric';
+      //   h1Elem.classList.remove('fixed');
+      // }
+    });
+  </script>
+</body>
+</html>
